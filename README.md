@@ -33,7 +33,7 @@ Users should be able to:
 ### Links
 
 - Solution URL: (https://github.com/efosu/TESTIMONIALS-GRID-CHALLENGE)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Live Site URL: [Add live site URL here](https://efosu.github.io/TESTIMONIALS-GRID-CHALLENGE/)
 
 ## My process
 
