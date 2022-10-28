@@ -1,0 +1,134 @@
+:root{
+    --p-moderate-violet:hsl(263, 55%, 52%);
+    --p-very-dark-grayish-blue: hsl(217, 19%, 35%);
+    --p-very-dark-blackish-blue: hsl(219, 29%, 14%);
+    --p-white: hsl(0, 0%, 100%);
+    --n-light-gray:hsl(0, 0%, 81%);
+    --n-light-grayish-blue: hsl(210, 46%, 95%);
+}
+
+
+body{
+    background-color: var(--n-light-grayish-blue);
+}
+
+
+main{
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    max-height: max-content;
+    max-width: 80rem;
+    padding: 2rem;
+    margin: auto;
+    font-family: "Barlow Semi Condensed", 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    display: grid;
+    grid-template-columns: repeat(4, auto);
+    grid-template-rows: repeat(2, auto);
+    gap: 1rem;
+    font-size: 12px;
+}
+
+article{
+    border-radius:5px ;
+    padding: 1.5rem 1rem;
+
+    color: var(--p-white);
+}
+
+article img{
+    width: 30px;
+    clip-path: circle();
+    background-color: white;
+    position: relative;
+    display: block;
+  
+}
+
+.profile{
+    display: flex;
+    column-gap: 0.6rem;
+    align-items: center;
+}
+
+.status{
+    display: block;
+    color: rgba(255, 255, 255, 0.508);
+
+}
+
+#one{
+    grid-column: 1/ span 2;
+    background-color: var(--p-moderate-violet);
+    background-image: url(./images/bg-pattern-quotation.svg);
+    background-repeat: no-repeat;
+    background-position: top right 2rem;
+}
+
+#five{
+    grid-column: 4/5;
+    grid-row: 1/ span 2;
+    background-color: var(--p-white);
+}
+
+
+#three{
+    background-color: white;
+}
+
+#five, #three{
+    color: black;
+}
+
+#five .status, #three .status{
+    color: rgba(0, 0, 0, 0.5);
+}
+
+#four{
+    grid-column: 2/ span 2 ;
+    background-color: var(--p-very-dark-blackish-blue);
+}
+
+#two{
+    background-color: var(--p-very-dark-grayish-blue);
+}
+
+h2, p{
+    margin-top: 0.9rem;
+}
+
+h2{
+    font-weight: 600;
+}
+p{
+    line-height: 1.5;
+    font-size: 12px;
+    font-weight: 500;
+    color: rgba(255, 255, 255, 0.696);
+
+}
+
+#three p, #five p{
+    color: rgba(0, 0, 0, 0.704);
+}
+
+.attribution{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+   
+}
+
+
+@media (max-width: 450px){
+    main{
+        display: flex;
+        flex-direction: column;
+        width: 90vw;
+        margin: 0 auto;
+        margin-top: 3rem;
+    }
+}
+
+
+
